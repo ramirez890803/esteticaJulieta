@@ -2,7 +2,7 @@
 
 require_once '../fpdf/fpdf.php';
 require_once '../config/conexion.php'; // Llamar al archivo de conexión con PDO
-
+//hola//
 class PDF extends FPDF
 {
    function Header()
