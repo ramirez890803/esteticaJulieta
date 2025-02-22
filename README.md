@@ -1,7 +1,7 @@
 # esteticaJulieta
 Proyecto Julieta
 
-Se anexan archivos actualizados y se integra las APIS en funcionamiento.
+Se anexan archivos actualizados y se integra las APIS en funcionamiento. Primera iteracion de entrega del Sistema funcional donde se incluyen la funcionabilidad de agregar, eliminar, modificar e imprimir lo relacionado con los usuarios del sistema.
 
 Nota: Esta primera iteración cuenta con programación orientada a objetos para la creación de objeto Usuario y los respectivos métodos para agregar, obtener, modificar y eliminar usuarios. (En la carpeta de modelos encontrara la dicha programación.
 Para hacer funcionar el módulo de usuarios es necesario que instale genere la base de datos que se llame bdjulieta y las tablas usuarios y privilegios la cual anexare el script para que lo pueda monter en XAMPP y pruebe los metodos. 
