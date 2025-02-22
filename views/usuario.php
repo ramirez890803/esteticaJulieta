@@ -34,7 +34,7 @@
 <div id="sidebar">
     <h4>Menú</h4>
     <nav class="nav flex-column">
-        <a class="nav-link" href="#" data-page="usuarios">Usuarios</a>
+        <a class="nav-link" href="usuario.php" data-page="usuarios">Usuarios</a>
         <a class="nav-link" href="clientes.php" data-page="clientes">Clientes</a>
         <a class="nav-link" href="#" data-page="proveedores">Proveedores</a>
         <a class="nav-link" href="cat_serv.php" data-page="catalogo_servicios">Catálogo de Servicios</a>
@@ -49,8 +49,16 @@
 <div id="content">
     <div class="container mt-4">
         <h1>Gestión de Usuarios</h1>
-        <button class="btn btn-success mb-3" id="btnAgregar" data-bs-toggle="modal" data-bs-target="#modalAgregar">Agregar Usuario</button>
-        <table class="table table-bordered" id="tablaUsuarios">
+        <div class="d-flex justify-content-between mb-3">
+    <button class="btn btn-success" id="btnAgregar" data-bs-toggle="modal" data-bs-target="#modalAgregar">
+        Agregar Usuario
+    </button>
+    <button class="btn btn-info" id="btnImprimir" data-bs-toggle="" data-bs-target="#">
+      <a href="../controllers/reportes.php" target="_blank"> <i class="far fa-file-pdf"></i>Imprimir Listado de Clientes </a> <!-- Boton para imprimir reporte en fpdf -->
+    </button>
+</div>
+        
+            <table class="table table-bordered" id="tablaUsuarios">
             <thead>
                 <tr>
                     <th>ID</th>
@@ -182,7 +190,7 @@
                             <td>${u.ApellidoPat_Us}</td>
                             <td>${u.ApellidoMat_Us}</td>
                             <td>${u.username}</td>
-                            <td>${u.privi_id}</td>
+                            <td>${u.privilegio  }</td>
                             <td>
                                 <button class="btn btn-warning btn-sm btnEditar" data-id="${u.id}" data-nombre="${u.Nombre_Us}" data-apellido-paterno="${u.ApellidoPat_Us}" data-apellido-materno="${u.ApellidoMat_Us}" data-usuario="${u.username}" data-password="${u.password}" data-privi-id="${u.privi_id}">Editar</button>
                                 <button class="btn btn-danger btn-sm btnEliminar" data-id="${u.id}">Eliminar</button>

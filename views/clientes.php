@@ -34,7 +34,7 @@
 <div id="sidebar">
     <h4>Menú</h4>
     <nav class="nav flex-column">
-        <a class="nav-link" href="usuarios.php" data-page="usuarios">Usuarios</a>
+        <a class="nav-link" href="usuario.php" data-page="usuarios">Usuarios</a>
         <a class="nav-link active" href="clientes.php" data-page="clientes">Clientes</a>
         <a class="nav-link" href="proveedores.php" data-page="proveedores">Proveedores</a>
         <a class="nav-link" href="" data-page="catalogo_servicios">Catálogo de Servicios</a>
