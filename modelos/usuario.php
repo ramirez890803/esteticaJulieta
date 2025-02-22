@@ -25,7 +25,9 @@ class Usuario {  //clase usuario//
     }
 
     public function obtenerUsuarios() { //funcion para obtener los datos de la base datos//
-        $sql = "SELECT * FROM usuarios";
+        $sql = "SELECT usuarios.id, usuarios.Nombre_Us ,usuarios.ApellidoPat_Us, usuarios.ApellidoMat_Us,usuarios.username, privilegios.privilegio
+        FROM usuarios
+        INNER JOIN privilegios ON privilegios.id_privi = usuarios.privi_id";
         $stmt = $this->pdo->query($sql);
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
